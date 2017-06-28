@@ -1,0 +1,155 @@
+body {
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  background-image: url(img/background.png);
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+.header {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: #ffffff;
+}
+
+.header-logo {
+  height: 24px;
+}
+
+.header-navbar {
+  margin-left: auto;
+  text-align: right;
+}
+
+.header-navbar__link {
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #3e4247;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.herobox {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-color: #161616;
+}
+
+.herobox__logo {
+  height: 131px;
+}
+
+.main-content {
+  padding-top: 4rem;
+  padding-bottom: 2.8rem;
+}
+
+.main-article__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3e4247;
+}
+
+.main-article__text {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.submit-request {
+  padding: 0.75rem 2rem;
+  margin-bottom: 4rem;
+  line-height: 1.0;
+  color: #ffffff;
+  text-align: center;
+  background-color: #000000;
+  border: none;
+  border-radius: 2px;
+}
+
+.object-card {
+  margin-bottom: 3rem;
+  display: flex;
+  background-color: #ffffff;
+  border-bottom: 2px solid #646971;
+}
+
+.object-card__shadow {
+  margin-bottom: 3rem;
+  display: flex;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  border-bottom: 2px solid #646971;
+}
+
+.object-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.object-card__content {
+  padding: 1.5rem 2rem;
+}
+
+.object-card__location {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+  font-size: 16px;
+  color: #646971;
+}
+
+.object-card__address {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.object-card__descripton {
+  line-height: 1.5;
+  font-size: 16px;
+  color: #3e4247;
+}
+
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #111111;
+  color: #a9afb6;
+}
+
+.footer-title {
+  margin-bottom: 1rem;
+  margin: 0;
+  font-size: 14px;
+	font-weight: bold;
+	color: #646971;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-navbar {
+  border-top: 2px solid #3e4247;
+  padding-top: 1rem;
+}
+
+.footer-text__legals {
+  padding-top: 4.3rem;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #a9afb6;
+}
