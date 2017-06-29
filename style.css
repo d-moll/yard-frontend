@@ -175,13 +175,17 @@ body {
   margin: 1em 0;
 }
 
-.footer-link {
+.last-item {
+  margin: 1.5em 0;
+}
+
+.footer-link a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.footer-link:last-child {
-  margin-top: 1.7rem;
+.footer-link-last-company {
+  margin: 1.0em 0;
 }
 
 .footer-navbar {
@@ -190,9 +194,9 @@ body {
 }
 
 .footer-text__legals {
-  margin: 7.6rem 0 0;
+  margin: 4.7rem 0 0;
   font-weight: 300;
   font-size: 11px;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #a9afb6;
 }
