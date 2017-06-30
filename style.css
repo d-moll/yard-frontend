@@ -1,32 +1,23 @@
 body {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   color: #3e4247;
   background-color: #eaebf0;
   background-image: url(img/background.png);
   background-size: 20px 10px;
   background-repeat: repeat;
+  text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased;
+  -webkit-line-break: after-white-space;
 }
 
-/**.header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  background-color: #ffffff;
-}**/
+/***header***/
 
 .header {
-  background: #fff;
+  background: #ffffff;
 }
 
-.header-container {
+.header-complexes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,14 +30,14 @@ body {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   height: 24px;
-  margin: 1px 0px -3px 1px
+  margin: auto;
 }
 
 .header-navbar {
   display: block;
 }
 
-.header-navbar__link {
+.header-navbar-link {
   display: inline-block;
   padding-left: 1.75rem;
   font-size: 16px;
@@ -55,9 +46,11 @@ body {
   text-decoration: none;
 }
 
-.header-navbar__link:last-child {
+.header-navbar-link:last-child {
   margin-right: 0;
 }
+
+/***hero***/
 
 .hero {
   padding: 4.8rem 0;
@@ -70,28 +63,31 @@ body {
   margin: 2px 0 -2px 0;
 }
 
+/***main***/
+
 .main-content {
   padding-top: 4.2rem;
   padding-bottom: 3rem;
 }
 
-.main-article__title {
+.company-info-title {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
   color: #3e4247;
 }
 
-.main-article__text {
+.company-info-text {
   margin: 0.9em 0 1em;
   line-height: 1.5;
 }
 
-.submit-request {
+.company-info-contact {
   padding: 0.75rem 2rem;
   line-height: 1.0;
   color: #ffffff;
   text-align: center;
+  font-family: 'Fira Sans';
   background-color: #000000;
   border: 0;
   border-radius: 2px;
@@ -102,30 +98,36 @@ body {
   margin: 0 0 4em;
 }
 
-.object-card {
+/***complex-card***/
+
+.complex-card {
   margin: 1.4em 0.5em 2.9em;
   display: flex;
-  text-decoration: none;
   background-color: #ffffff;
+  font-family: 'Fira Sans', sans-serif;
   border-bottom: 2px solid #646971;
   cursor: pointer;
 }
 
-.object-card:hover {
+.complex-card-first {
+  margin: 4em 0.5em 2.9em;
+}
+
+.complex-card:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
-.object-card__img {
+.complex-card-img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.object-card__content {
+.complex-card-content {
   padding: 1.5rem 2rem;
 }
 
-.object-card__location {
+.complex-card-title {
   margin: 0;
   margin-bottom: 1.5rem;
   font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
@@ -133,23 +135,24 @@ body {
   color: #646971;
 }
 
-.object-card__address {
-  margin: 0;
-  font-size: 40px;
-  font-weight: bold;
+.complex-card-address {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   line-height: 1.4;
-  text-align: left;
   color: #000000;
 }
 
-.object-card__description {
-  font-family: 'FiraSans', sans-serif;
-  font-size: 16px;
-  text-align: left;
+.complex-card-description {
+  margin-top: 0.5rem;
+  margin-right: 5.375rem;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #3e4247;
-  line-height: 1.5em;
-  margin: 0.7em 0;
 }
+
+/***footer***/
 
 .footer {
   padding-top: 2rem;
@@ -165,7 +168,7 @@ body {
 }
 
 .footer-title {
-  margin: 0.1rem 0;
+  margin: 0.1rem 0 0.9em;
   font-size: 14px;
 	font-weight: bold;
 	color: #646971;
@@ -175,28 +178,34 @@ body {
   margin: 1em 0;
 }
 
-.last-item {
-  margin: 1.5em 0;
-}
-
-.footer-link a {
+.footer-link {
   color: #ffffff;
   text-decoration: none;
+  display: block;
+  margin: 1em 0;
 }
 
 .footer-link-last-company {
   margin: 1.0em 0;
 }
 
-.footer-navbar {
+.footer-link-last-complex {
+  margin: 1.5em 0;
+}
+
+.footer-nav {
   border-top: 2px solid #3e4247;
   padding-top: 1rem;
 }
 
-.footer-text__legals {
+.footer-text-legals {
   margin: 4.7rem 0 0;
   font-weight: 300;
   font-size: 11px;
   line-height: 1.7;
   color: #a9afb6;
+}
+
+.last-item {
+  margin: 1.5em 0;
 }
